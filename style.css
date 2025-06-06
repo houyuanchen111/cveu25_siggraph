@@ -570,3 +570,137 @@ li {
     color: red;
 }
 
+/* --- Friendly Link Card Style (Dark Theme) --- */
+
+/* --- New Styles for Community Feature Section --- */
+
+.feature-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    color: #eee;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Top Section Layout */
+.feature-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Left Side: Info */
+.feature-info {
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.feature-title {
+    font-size: 1em;
+    margin: 0;
+    color: #fff;
+}
+
+.feature-handle, .feature-description, .feature-hosts {
+    color: #ccc;
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+.feature-hosts a {
+    color: #00aaff; /* A blue link color */
+    text-decoration: none;
+}
+.feature-hosts a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Buttons */
+.feature-socials {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.social-button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: 1px solid #555;
+    transition: background-color 0.2s;
+}
+
+.social-button:hover {
+    background-color: #555;
+}
+
+/* Right Side: Logo */
+.feature-logo {
+    flex-basis: 55%;
+    text-align: right;
+    max-width: 100%;
+    height: auto;
+    display: block; /* 这是一个好习惯，可以避免图片下方出现意外的空隙 */
+}
+
+.feature-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Bottom Section: Guest Grid */
+.guest-grid {
+    display: grid;
+    /* This creates a responsive grid with columns between 140px and 1fr */
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.guest-card {
+    text-align: center;
+}
+
+.guest-card img {
+    width: 120px;  /* Set avatar width */
+    height: 120px; /* Set avatar height */
+    border-radius: 50%; /* This makes the image circular */
+    object-fit: cover; /* This prevents the image from being stretched */
+    border: 2px solid #555;
+    margin-bottom: 10px;
+}
+
+.guest-name {
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.guest-affiliation {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #ccc;
+}
+/* Styling for the horizontal rule divider */
+.section-divider {
+  border: 0; /* 移除默认的边框 */
+  height: 1px; /* 设置分割线的高度 */
+  background-color: #555; /* 设置分割线的颜色，深灰色很适合您的主题 */
+  margin: 60px auto; /* 上下留出60px的外边距，auto使其居中 */
+  width: 95%; /* 分割线的宽度，80%看起来比100%更有设计感 */
+}
+
+.guest-section-title {
+  text-align: center; /* 文字居中 */
+  color: #ccc; /* 设置文字颜色 */
+  font-weight: normal; /* 字体粗细正常 */
+  letter-spacing: 2px; /* 增加文字间距，更有设计感 */
+  text-transform: uppercase; /* 将文字转换为大写 */
+  margin-top: 0; /* 移除标题上方的默认外边距 */
+  margin-bottom: 40px; /* 在标题和下面的嘉宾列表之间增加一些间距 */
+}
