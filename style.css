@@ -587,12 +587,12 @@ li {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 /* Left Side: Info */
 .feature-info {
-    flex-basis: 50%;
+    flex-basis: 100%;
     text-align: left;
 }
 
@@ -603,9 +603,11 @@ li {
 }
 
 .feature-handle, .feature-description, .feature-hosts {
+    font-family: "Lora", serif;
     color: #ccc;
     margin: 8px 0;
     font-size: 1em;
+    margin-bottom: 0px;
 }
 
 .feature-hosts a {
@@ -641,8 +643,8 @@ li {
 
 /* Right Side: Logo */
 .feature-logo {
-    flex-basis: 55%;
-    text-align: right;
+    flex-basis: 50%;
+    text-align: cen;
     max-width: 100%;
     height: auto;
     display: block; /* 这是一个好习惯，可以避免图片下方出现意外的空隙 */
@@ -655,6 +657,7 @@ li {
 
 /* Bottom Section: Guest Grid */
 .guest-grid {
+     font-family: "Lora", serif;
     display: grid;
     /* This creates a responsive grid with columns between 140px and 1fr */
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -679,6 +682,7 @@ li {
     margin: 0;
     font-weight: bold;
     color: #fff;
+    font-size: 1em;
 }
 
 .guest-affiliation {
@@ -686,21 +690,36 @@ li {
     font-size: 0.9em;
     color: #ccc;
 }
-/* Styling for the horizontal rule divider */
-.section-divider {
-  border: 0; /* 移除默认的边框 */
-  height: 1px; /* 设置分割线的高度 */
-  background-color: #555; /* 设置分割线的颜色，深灰色很适合您的主题 */
-  margin: 60px auto; /* 上下留出60px的外边距，auto使其居中 */
-  width: 95%; /* 分割线的宽度，80%看起来比100%更有设计感 */
-}
+
 
 .guest-section-title {
-  text-align: center; /* 文字居中 */
+     font-family: "Lora", serif;
+  text-align: left; /* 文字居中 */
   color: #ccc; /* 设置文字颜色 */
+font-size: 1em;
   font-weight: normal; /* 字体粗细正常 */
   letter-spacing: 2px; /* 增加文字间距，更有设计感 */
   text-transform: uppercase; /* 将文字转换为大写 */
   margin-top: 0; /* 移除标题上方的默认外边距 */
-  margin-bottom: 40px; /* 在标题和下面的嘉宾列表之间增加一些间距 */
+  margin-bottom: 5px; /* 在标题和下面的嘉宾列表之间增加一些间距 */
+}
+
+/* Style for the placeholder guest card */
+.placeholder-card {
+  opacity: 0.6; /* 设置透明度为60% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  transition: opacity 0.3s ease; /* 增加一个平滑的过渡效果 */
+}
+
+.placeholder-card:hover {
+  opacity: 1; /* 鼠标悬停时恢复不透明 */
+}
+
+.placeholder-card .guest-name,
+.placeholder-card .guest-affiliation {
+  display: none;
 }
